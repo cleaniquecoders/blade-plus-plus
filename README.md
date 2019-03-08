@@ -13,6 +13,141 @@ $ composer require cleaniquecoders/laravel-blade-directives
 
 ## Usage
 
+Available directives based on category:
+
+### Actions
+
+```
+@baseAction([
+	'label' => 'Google',
+	'href' => 'https://google.com',
+	'icon' => 'fa-google'
+])
+
+@createAction([
+	'label' => 'New User',
+	'href' => route('users.create'),
+])
+
+@editAction([
+	'label' => 'Edit User',
+	'href' => route('users.edit', 1),
+])
+
+@showAction([
+	'label' => 'Show User',
+	'href' => route('users.show', 1),
+])
+
+@destroyAction([
+	'label' => 'Delete User',
+	'href' => route('users.destroy', 1),
+	'id' => 'destroy-user-1'
+])
+```
+
+### Card
+
+```
+@card 
+	@slot('card_title')
+
+	@endslot
+	
+	@slot('card_body')
+
+	@endslot
+
+	@slot('card_footer')
+
+	@endslot
+@endcard
+```
+
+### Form
+
+```
+@input([
+	'id' => 'name',
+	'name' => 'name',
+])
+
+@input([
+	'id' => 'email',
+	'name' => 'email',
+	'type' => 'email'
+])
+
+@input([
+	'id' => 'password',
+	'name' => 'password',
+	'type' => 'password'
+])
+
+@input([
+	'id' => 'password_confirmation',
+	'name' => 'password_confirmation',
+	'type' => 'password'
+])
+```
+
+### Layout
+
+```
+@container
+	@row 
+		@col('col-6')
+
+		@endcol
+
+		@col('col-6')
+
+		@endcol
+	@endrow
+@endcontainer
+```
+
+### Modal
+
+```
+@modal 
+	@slot('modal_body')
+
+	@endslot
+
+	@slot('modal_footer')
+
+	@endslot
+@endmodal
+```
+
+### Table 
+
+```
+@table 
+	@slot('thead')
+
+	@endslot
+	
+	@slot('tbody')
+
+	@endslot
+
+	@slot('tfooter')
+
+	@endslot
+@endtable
+```
+
+### Misc.
+
+```
+@appName
+
+@icon('fa fa-search')
+```
+
+
 ## Test
 
 Run the following command:
