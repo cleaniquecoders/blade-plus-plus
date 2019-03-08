@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card {{ $card_class ?? '' }}}">
   	@isset($card_title)
 		<div class="card-header {{ $card_header_class ?? '' }}">
 			{{ __($card_title) }}
