@@ -5,5 +5,8 @@
 	@isset($file) enctype="multipart/form-data" @endisset
 	>
     @csrf
+    @isset($method) 
+		@method($method)
+    @endisset
     {!! $inputs ?? '' !!}
 </form>
