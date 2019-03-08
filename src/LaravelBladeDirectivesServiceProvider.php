@@ -18,7 +18,7 @@ class LaravelBladeDirectivesServiceProvider extends ServiceProvider
         Blade\Misc::register();
         Blade\Modal::register();
         Blade\Table::register();
-        
+
         $this->loadViewsFrom(dirname(__FILE__) . '/../resources/views', 'laravel-blade-directives');
         $this->publishes([
             dirname(__FILE__) . '/../resources/views' => resource_path('views/vendor/laravel-blade-directives'),
