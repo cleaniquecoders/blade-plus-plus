@@ -29,6 +29,13 @@
         "phpunit/phpunit": "^6.5|^7.0|^8.0",
         "orchestra/testbench": "3.5.*|3.6.*|3.7.*|3.8.*"
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CleaniqueCoders\\LaravelBladeDirectives\\LaravelBladeDirectivesServiceProvider"
+            ]
+        }
+    },
     "config": {
         "sort-packages": true
     },
