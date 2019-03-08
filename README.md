@@ -5,7 +5,7 @@ Extended Laravel Blade Directives
 ## Installation
 
 ```
-$ composer require global cleaniquecoders/laravel-blade-directives
+$ composer require cleaniquecoders/laravel-blade-directives
 ```
 
 ## Usage
