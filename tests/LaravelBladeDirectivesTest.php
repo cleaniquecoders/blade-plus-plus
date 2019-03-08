@@ -23,6 +23,12 @@ class LaravelBladeDirectivesTest extends TestCase
     }
 
     /** @test */
+    public function it_has_layout_registrar()
+    {
+        $this->assertTrue(class_exists('\CleaniqueCoders\LaravelBladeDirectives\Blade\Layout'));
+    }
+
+    /** @test */
     public function it_has_misc_registrar()
     {
         $this->assertTrue(class_exists('\CleaniqueCoders\LaravelBladeDirectives\Blade\Misc'));
