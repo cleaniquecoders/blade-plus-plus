@@ -1,26 +1,28 @@
 <?php
 
-use CleaniqueCoders\LaravelBladeDirectives;
+namespace CleaniqueCoders\LaravelBladeDirectives;
+
 use Illuminate\Support\ServiceProvider;
 
-class LaravelBladeDirectives extends ServiceProvider
+class LaravelBladeDirectivesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
-        $this->loadViewsFrom('../resources/views', 'laravel-blade-directives');
-        $this->publishes([
-            '../resources/views' => resource_path('views/vendor/laravel-blade-directives'),
-        ]);
-
         Blade\Action::register();
+        Blade\Card::register();
         Blade\Form::register();
+        Blade\Layout::register();
         Blade\Misc::register();
         Blade\Modal::register();
-        Blade\Panel::register();
         Blade\Table::register();
+        
+        $this->loadViewsFrom(dirname(__FILE__) . '/../resources/views', 'laravel-blade-directives');
+        $this->publishes([
+            dirname(__FILE__) . '/../resources/views' => resource_path('views/vendor/laravel-blade-directives'),
+        ]);
     }
 
     /**
