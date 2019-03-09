@@ -15,4 +15,16 @@ class DirectivesTest extends TestCase
     {
         $this->assertBlade('<div class="container-fluid"> </div>', '@container(true) @endcontainer');
     }
+
+    /** @test */
+    public function is_row()
+    {
+        $this->assertBlade('<div class="row"> </div>', '@row @endrow');
+    }
+
+    /** @test */
+    public function is_col()
+    {
+        $this->assertBlade('<div class="col"> </div>', '@col @endcol');
+    }
 }
