@@ -1,6 +1,6 @@
 <?php
 
-namespace CleaniqueCoders\LaravelBladeDirectives\Tests;
+namespace CleaniqueCoders\BladePlusPlus\Tests;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase
 {

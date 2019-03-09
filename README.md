@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/cleaniquecoders/laravel-blade-directives.svg?branch=master)](https://travis-ci.org/cleaniquecoders/laravel-blade-directives) [![Latest Stable Version](https://poser.pugx.org/cleaniquecoders/laravel-blade-directives/v/stable)](https://packagist.org/packages/cleaniquecoders/laravel-blade-directives) [![Total Downloads](https://poser.pugx.org/cleaniquecoders/laravel-blade-directives/downloads)](https://packagist.org/packages/cleaniquecoders/laravel-blade-directives) [![License](https://poser.pugx.org/cleaniquecoders/laravel-blade-directives/license)](https://packagist.org/packages/cleaniquecoders/laravel-blade-directives)
+[![Build Status](https://travis-ci.org/cleaniquecoders/blade-plus-plus.svg?branch=master)](https://travis-ci.org/cleaniquecoders/blade-plus-plus) [![Latest Stable Version](https://poser.pugx.org/cleaniquecoders/blade-plus-plus/v/stable)](https://packagist.org/packages/cleaniquecoders/blade-plus-plus) [![Total Downloads](https://poser.pugx.org/cleaniquecoders/blade-plus-plus/downloads)](https://packagist.org/packages/cleaniquecoders/blade-plus-plus) [![License](https://poser.pugx.org/cleaniquecoders/blade-plus-plus/license)](https://packagist.org/packages/cleaniquecoders/blade-plus-plus)
 
 ## Laravel Blade Directives
 
@@ -8,7 +8,7 @@ Extended Laravel Blade Directives
 ## Installation
 
 ```
-$ composer require cleaniquecoders/laravel-blade-directives
+$ composer require cleaniquecoders/blade-plus-plus
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 <?php
 
-namespace CleaniqueCoders\LaravelBladeDirectives\Blade;
+namespace CleaniqueCoders\BladePlusPlus\Blade;
 
 use Illuminate\Support\Facades\Blade;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace CleaniqueCoders\LaravelBladeDirectives;
+namespace CleaniqueCoders\BladePlusPlus;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelBladeDirectivesServiceProvider extends ServiceProvider
+class BladePlusPlusServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

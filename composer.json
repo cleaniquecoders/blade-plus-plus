@@ -1,5 +1,5 @@
 {
-    "name": "cleaniquecoders/laravel-blade-directives",
+    "name": "cleaniquecoders/blade-plus-plus",
     "description": "Extended Laravel Blade Directives",
     "license": "MIT",
     "authors": [
@@ -10,12 +10,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "CleaniqueCoders\\LaravelBladeDirectives\\": "src/"
+            "CleaniqueCoders\\BladePlusPlus\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CleaniqueCoders\\LaravelBladeDirectives\\Tests\\": "tests/"
+            "CleaniqueCoders\\BladePlusPlus\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -32,7 +32,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CleaniqueCoders\\LaravelBladeDirectives\\LaravelBladeDirectivesServiceProvider"
+                "CleaniqueCoders\\BladePlusPlus\\BladePlusPlusServiceProvider"
             ]
         }
     },
