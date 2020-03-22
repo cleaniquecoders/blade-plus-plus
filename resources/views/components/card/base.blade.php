@@ -1,19 +1,17 @@
-<div class="card {{ $card_class ?? '' }}}">
-  	@isset($card_title)
-		<div class="card-header {{ $card_header_class ?? '' }}">
-			{{ __($card_title) }}
-		</div>
-  	@endisset
-
-  	@isset($card_body)
-		<div class="card-body {{ $card_body_class ?? '' }}">
-			{{ $card_body }}
-		</div>
-	@endisset
-
-	@isset($card_footer)
-		<div class="card-footer {{ $card_footer_class ?? '' }}">
-			{{ $card_footer }}
-		</div>
-  	@endisset
+<div class="card {{ $card_class ?? '' }}">
+	@includeWhen(
+		isset($card_header), 
+		'blade-plus-plus::components.card.header', 
+		['card_header' => $card_header, 'card_header_class' => $card_header_class]
+	)
+  	@includeWhen(
+  		isset($card_body), 
+  		'blade-plus-plus::components.card.body', 
+  		['card_body' => $card_body, 'card_body_class' => $card_body_class]
+	)
+	@includeWhen(
+		isset($card_footer), 
+		'blade-plus-plus::components.card.footer', 
+		['card_footer' => $card_footer, 'card_footer_class' => $card_footer_class]
+	)
 </div>
