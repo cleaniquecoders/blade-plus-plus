@@ -8,6 +8,6 @@ class Table
 {
     public static function register()
     {
-        Blade::component('laravel-blade-directives::components.tables.base', 'table');
+        Blade::aliasComponent('laravel-blade-directives::components.tables.base', 'table');
     }
 }
