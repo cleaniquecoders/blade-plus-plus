@@ -8,9 +8,9 @@ class Card
 {
     public static function register()
     {
-        Blade::aliasComponent('blade-plus-plus::components.cards.base', 'card');
-        Blade::aliasComponent('blade-plus-plus::components.cards.body', 'cardbody');
-        Blade::aliasComponent('blade-plus-plus::components.cards.footer', 'cardfooter');
-        Blade::include('blade-plus-plus::components.cards.header', 'cardheader');
+        Blade::aliasComponent('blade-plus-plus::components.card.base', 'card');
+        Blade::aliasComponent('blade-plus-plus::components.card.body', 'cardbody');
+        Blade::aliasComponent('blade-plus-plus::components.card.footer', 'cardfooter');
+        Blade::include('blade-plus-plus::components.card.header', 'cardheader');
     }
 }
