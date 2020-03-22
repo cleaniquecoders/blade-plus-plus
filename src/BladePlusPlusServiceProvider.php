@@ -19,9 +19,9 @@ class BladePlusPlusServiceProvider extends ServiceProvider
         Blade\Modal::register();
         Blade\Table::register();
 
-        $this->loadViewsFrom(dirname(__FILE__) . '/../resources/views', 'laravel-blade-directives');
+        $this->loadViewsFrom(dirname(__FILE__) . '/../resources/views', 'blade-plus-plus');
         $this->publishes([
-            dirname(__FILE__) . '/../resources/views' => resource_path('views/vendor/laravel-blade-directives'),
+            dirname(__FILE__) . '/../resources/views' => resource_path('views/vendor/blade-plus-plus'),
         ]);
     }
 
