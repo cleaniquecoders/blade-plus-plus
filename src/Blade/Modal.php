@@ -8,8 +8,8 @@ class Modal
 {
     public static function register()
     {
-        Blade::aliasComponent('laravel-blade-directives::components.modals.base', 'modal');
-        Blade::include('laravel-blade-directives::components.modals.button', 'modalTrigger');
-        Blade::include('laravel-blade-directives::components.modals.close-button', 'modalClose');
+        Blade::aliasComponent('blade-plus-plus::components.modals.base', 'modal');
+        Blade::include('blade-plus-plus::components.modals.button', 'modalTrigger');
+        Blade::include('blade-plus-plus::components.modals.close-button', 'modalClose');
     }
 }

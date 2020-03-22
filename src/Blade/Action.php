@@ -8,10 +8,10 @@ class Action
 {
     public static function register()
     {
-        Blade::include('laravel-blade-directives::components.actions.base', 'baseAction');
-        Blade::include('laravel-blade-directives::components.actions.create', 'createAction');
-        Blade::include('laravel-blade-directives::components.actions.destroy', 'destroyAction');
-        Blade::include('laravel-blade-directives::components.actions.edit', 'editAction');
-        Blade::include('laravel-blade-directives::components.actions.show', 'showAction');
+        Blade::include('blade-plus-plus::components.actions.base', 'baseAction');
+        Blade::include('blade-plus-plus::components.actions.create', 'createAction');
+        Blade::include('blade-plus-plus::components.actions.destroy', 'destroyAction');
+        Blade::include('blade-plus-plus::components.actions.edit', 'editAction');
+        Blade::include('blade-plus-plus::components.actions.show', 'showAction');
     }
 }

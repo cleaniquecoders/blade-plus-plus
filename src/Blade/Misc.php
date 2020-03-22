@@ -8,8 +8,8 @@ class Misc
 {
     public static function register()
     {
-        Blade::include('laravel-blade-directives::components.misc.app-name', 'appName');
-        Blade::include('laravel-blade-directives::components.misc.logo');
+        Blade::include('blade-plus-plus::components.misc.app-name', 'appName');
+        Blade::include('blade-plus-plus::components.misc.logo');
         Blade::directive('icon', function($icon) {
             $icon = str_replace('\'', '"', $icon);
 
