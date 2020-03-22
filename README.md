@@ -9,7 +9,10 @@ Extended Laravel Blade Directives
 
 ```
 $ composer require cleaniquecoders/blade-plus-plus
+$ php artisan vendor:publish --provider="CleaniqueCoders\BladePlusPlus\BladePlusPlusServiceProvider"
 ```
+
+> Starting version **2.1.0**, when publishing the resources, it will publish to `resources/views/vendor/blade-plus-plus` instead of `resources/views/vendor/laravel-blade-directives`. Do consider to update your codes.
 
 ## Usage
 
